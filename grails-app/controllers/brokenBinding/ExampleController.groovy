@@ -13,7 +13,7 @@ class ExampleController implements Controller {
     }
 
     def edit() {
-        ExampleCommand cmd = new ExampleCommand() // TODO: Renaming this command will allow the list action to work
+        ExampleCommand cmd = new ExampleCommand() // TODO: Renaming this command variable will allow the list action to work
         [instance: cmd]
     }
 }

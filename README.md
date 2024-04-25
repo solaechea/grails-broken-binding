@@ -1,6 +1,8 @@
 Overview
 ---
 
+https://github.com/grails/grails-core/issues/13486
+
 ## Error Message
 
     Cannot cast object 'brokenBinding.ExampleSearchCommand@116e5496' with class 'brokenBinding.ExampleSearchCommand' to class 'brokenBinding.ExampleCommand'

@@ -9,7 +9,7 @@ Overview
 
 Run the application:
     
-    gradle bootRun
+    ./gradlew bootRun
 
 Browse to:
     

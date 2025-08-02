@@ -3,7 +3,7 @@ Overview
 
 https://github.com/apache/grails-core/issues/14947
 
-Probably related to #13486
+Probably related to https://github.com/apache/grails-core/issues/13486
 
 ## Error Message
 

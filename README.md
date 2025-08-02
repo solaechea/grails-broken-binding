@@ -1,8 +1,9 @@
 Overview
 ---
 
-This error is similar to the one reported here:
-https://github.com/grails/grails-core/issues/13486
+https://github.com/apache/grails-core/issues/14947
+
+Probably related to #13486
 
 ## Error Message
 

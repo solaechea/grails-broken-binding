@@ -13,7 +13,7 @@ class ExampleController implements Controller {
     }
 
     def echoPerson(String name) {
-        Person person = Person.findByName(name) // TODO: Renaming this command variable will allow the echo action to work
+        Person person = Person.findByName(name) // TODO: Renaming this variable will allow the echo action to work
         render(text: person?.name ?: "No Person found with name: $name")
     }
 

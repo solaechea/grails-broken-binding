@@ -5,27 +5,16 @@ import grails.validation.Validateable
 
 class ExampleController implements Controller {
     def index() {
-        redirect(action: 'list')
+        redirect(action: 'echo', params: [person: 'George Doe'])
     }
 
-    def list(ExampleSearchCommand cmd) {
-        [cmd: cmd]
+    def echo(String person) {
+        render(text: person)
     }
 
-    def edit() {
-        ExampleCommand cmd = new ExampleCommand() // TODO: Renaming this command variable will allow the list action to work
-        [instance: cmd]
+    def echoPerson(String name) {
+        Person person = Person.findByName(name) // TODO: Renaming this command variable will allow the echo action to work
+        render(text: person?.name ?: "No Person found with name: $name")
     }
-}
 
-class ExampleSearchCommand implements Validateable {
-    String name
-
-    static boolean defaultNullable() {
-        true
-    }
-}
-
-class ExampleCommand implements Validateable {
-    String name
 }
